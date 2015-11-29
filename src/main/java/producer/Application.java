@@ -1,6 +1,5 @@
 package producer;
 
-import com.amazonaws.services.kinesis.AmazonKinesis;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

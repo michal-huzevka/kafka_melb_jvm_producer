@@ -20,6 +20,9 @@ public class ApplicationConfiguration {
     @Value("${app.brokerList}")
     private String brokerList;
 
+    @Value("${app.zooKeeper}")
+    private String zooKeeper;
+
     public String getAppName() {
         return appName;
     }
@@ -31,5 +34,9 @@ public class ApplicationConfiguration {
 
     public String getBrokerList() {
         return brokerList;
+    }
+
+    public String getZooKeeper() {
+        return zooKeeper;
     }
 }

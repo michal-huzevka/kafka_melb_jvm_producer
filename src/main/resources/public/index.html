@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flight Searcher</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+
+
+    <script src="jquery-2.1.4.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+    <div class="row">
+        <div class="one-half column" style="margin-top: 5%">
+<h3>Flight Searcher</h3>
+
+<form method="post">
+    <label for="from">From</label>
+    <input id="from" name="from" type="text"/>
+                <br/>
+    <label for="to">To</label>
+    <input id="to" name="to" type="text"/> <br/>
+
+    <label for="date">Date</label>
+    <input id="date" name="date" type="date"/> <br/>
+    <input id="findFlights" value="Find Flights" type="button"/>
+</form>
+<table style="display:none" id="results">
+    <thead>
+    <tr>
+        <td>Price</td>
+        <td>Airline</td>
+        <td>Departure Time</td>
+        <td>Arrival Time</td>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
